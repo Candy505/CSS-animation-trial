@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&display=swap');
+
+*{
+    
+    margin:0px;
+    padding: 0;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+nav{
+    background-color: #75b99b;
+    height: 8vh;
+    text-align: end;
+}
+
+main{
+    
+    width: fit-content;
+    display: flex; 
+    justify-content: center;
+}
+
+body{
+    background-image:linear-gradient(rgb(249, 243, 248),rgb(212, 239, 246));
+}
+
+h1,h2{
+   text-align: center;
+   padding: 10px;
+   
+}
+
+section{
+    margin-top: 40px;
+    padding: 10px;
+    width: 80%;
+   
+   
+}
+
+#menu{
+  font-size: 4vh;
+  padding: 30px 20px 0 20px;
+}
+
+#box1, #box2,#box3{
+    margin: auto;
+    background-color: #ffcccc;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+   
+  }
+
+  #box1:hover,#box2:hover ,#box3:hover  {
+    background-color: #ffcccc;
+    animation: none;
+    rotate: 0deg;
+  }
+
+  @keyframes myfirst {
+    0%   {background: rgb(248, 233, 233); left: 0px; top: 0px; rotate: -4deg;}
+    25%  {background: rgb(243, 243, 205); left: 200px; top: 0px;rotate: 4deg;}
+    50%  {background: rgb(213, 213, 233); left: 200px; top: 200px;rotate: -4deg;}
+    75%  {background: rgb(221, 239, 221); left: 0px; top: 200px;rotate: 4deg;}
+    100% {background: rgb(231, 209, 209); left: 0px; top: 0px;rotate: -4deg;}
+  }
+  
